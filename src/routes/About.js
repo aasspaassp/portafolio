@@ -4,14 +4,14 @@
 const About = () => {
 
   const contact = {
-    first: "Your",
-    last: "Name",
+    first: "Andrés",
+    last: "González Anzures",
     avatar: "https://placekitten.com/g/200/200",
-    twitter: "your_handle",
-    notes: "Some notes",
+
+    notes: "Philosophy major and software engineering student ",
     favorite: true,
-    intro: ["I'm a software developer with a passion for web development. I am currently based somewhere in the world. My main focus is building fast, accessible, and beautiful websites that users enjoy.",
-    "You can have a look at some of my work here."],
+    intro: ["27 years. Degree in philosophy. Some certifications in programming but must of it a have learn CS by my own. Interested in programming, have been working on javascript focusing my attention into web development and music based game design. ",
+    "For any topic or conversation related to my programs message me at andresfilos94@gmail.com"],
     about: ["Licenciado en filosofía. Actualmente curso la carrera de ingeniería en tecnologías y sistemas de la información. Estoy interesado en implementar soluciones de software que beneficien al usuario.", "Poseo habilidades de desarrollo web full-stack: Javascript, React, Angular, Node, Express y Typescript. Tengo experiencia en proyectos creativos, redacción de publicidad, SEO, además de un gran rigor en la investigación."]
   };
 
@@ -51,6 +51,17 @@ const About = () => {
     )}
 
     {contact.notes && <p>{contact.notes}</p>}
+
+    {contact.intro && (
+      <>
+      <p>{contact.intro[0]}</p>  
+    <p>{contact.intro[1]}</p>
+    </>)}
+    {contact.about && (
+      <>
+      <p>{contact.about[0]}</p>  
+    <p>{contact.about[1]}</p>
+    </>)}
 
     </div>
     </div>
